@@ -1,0 +1,97 @@
+.App {
+  text-align: center;
+  padding: 20px;
+}
+
+.search-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.input-bar {
+  padding: 15px;
+  font-size: 18px;
+  margin-right: 10px;
+  width: 300px;
+  max-width: 80%;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+}
+
+.bookshelf-button {
+  background-color: green;
+  color: white;
+  border: none;
+  padding: 15px 25px;
+  cursor: pointer;
+  font-size: 18px;
+  border-radius: 5px;
+  position: absolute;
+  right: 150px;
+  top: 0;
+}
+
+.bookshelf-button:hover {
+  background-color: darkgreen;
+}
+
+.book-card {
+  border: 2px solid #515151;
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 5px;
+  width: 200px;
+  box-sizing: border-box;
+}
+
+.results, .bookshelf {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+button {
+  background-color: green;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: darkgreen;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+  .input-bar {
+    width: 70%;
+  }
+
+  .bookshelf-button {
+    position: static;
+    margin-top: 10px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .input-bar {
+    width: 90%;
+    font-size: 16px;
+  }
+
+  .bookshelf-button {
+    font-size: 16px;
+    padding: 10px 20px;
+  }
+
+  .book-card {
+    width: 100%;
+    margin: 10px 0;
+  }
+}
